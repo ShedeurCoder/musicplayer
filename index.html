@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Shedeur Music Player</title>
+</head>
+<body>
+    
+    <div class="player">
+        <img src="headphone.png" alt="Headphones image">
+        <h1>Shedeur Music Player</h1>
+
+        <audio id="player" ontimeupdate = "updateProgress()">
+            <source id="source" src="">
+            Audio not supported
+        </audio>
+        
+        <div id="controls">
+            <h2 id="currentSong"></h2>
+            <progress id="progress" value="0" max="100"></progress>
+            <div class="controls_wrapper">
+                <span onclick="playAudio()">&#9658;</span>
+                <span onclick="pauseAudio()">&#10074;&#10074;</span>
+            </div>
+            <p>Volume control:</p>
+            <div class="volume">
+                <span>-</span>
+                <input type="range" id="volumeSlider" min="0" max="1" step="0.01">
+                <span>+</span>
+            </div>
+        </div>
+
+        <h2>Songs by Shedeur:</h2>
+        <div id="songList">
+        </div>
+        <small>More songs coming soon!</small>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
