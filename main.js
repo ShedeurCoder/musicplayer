@@ -1,7 +1,8 @@
 const player = document.getElementById("player");
 const songs = [
     "chillingwiththerats.mp3",
-    "myfriendusedtoeatmycheese.mp3"
+    "myfriendusedtoeatmycheese.mp3",
+    "carmechanic.mp3"
 ];
 
 function createSongList() {
